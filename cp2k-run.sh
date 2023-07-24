@@ -5,12 +5,12 @@
 #SBATCH --time=00:05:00
 #SBATCH --exclusive
 #SBATCH --nodes=1
-#SBATCH --ntasks=4
-#SBATCH --tasks-per-node=4
-#SBATCH --cpus-per-task=9
+#SBATCH --ntasks=9
+#SBATCH --tasks-per-node=9
+#SBATCH --cpus-per-task=4
 
 module load cp2k
 
-export OMP_NUM_THREADS=9
+export OMP_NUM_THREADS=4
 
 srun --cpu-bind=cores cp2k.psmp -i benchmarks/QS/H2O-64.inp -o H2O-64-output.txt
