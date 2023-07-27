@@ -4,8 +4,8 @@
 #SBATCH --qos=standard
 #SBATCH --time=00:05:00
 #SBATCH --exclusive
-#SBATCH --nodes=2
-#SBATCH --ntasks=36
+#SBATCH --nodes=1
+#SBATCH --ntasks=18
 #SBATCH --tasks-per-node=18
 #SBATCH --cpus-per-task=2
 

@@ -12,10 +12,10 @@
  DBCSR| Communication thread load                                             68
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2023-07-27 10:55:23.320
- ***** ** ***  *** **   PROGRAM STARTED ON                               r1i4n33
+  **** **** ******  **  PROGRAM STARTED AT               2023-07-27 11:48:33.071
+ ***** ** ***  *** **   PROGRAM STARTED ON                               r1i7n18
  **    ****   ******    PROGRAM STARTED BY                         mrnuff-cirrus
- ***** **    ** ** **   PROGRAM PROCESS ID                                437606
+ ***** **    ** ** **   PROGRAM PROCESS ID                                511202
   **** **  *******  **  PROGRAM STARTED IN /mnt/lustre/indy2lfs/work/tc047/tc047
                                            /mrnuff-cirrus/cp2k/nuff-benchmarks/H
                                            2O-64-1node
@@ -55,12 +55,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal            263585924     263585924     263585924     263585924
- MEMORY| MemFree             258819220     258819220     258819456     258819416
+ MEMORY| MemFree             258987956     258987956     258987956     258987956
  MEMORY| Buffers                    64            64            64            64
- MEMORY| Cached                 342884        342804        342884        342817
- MEMORY| Slab                  1607296       1607256       1607296       1607262
- MEMORY| SReclaimable           122484        122484        122484        122484
- MEMORY| MemLikelyFree       259284652     259284652     259284808     259284782
+ MEMORY| Cached                 286980        286980        286980        286980
+ MEMORY| Slab                  1601600       1601600       1601600       1601600
+ MEMORY| SReclaimable           135340        135340        135340        135340
+ MEMORY| MemLikelyFree       259410340     259410340     259410340     259410340
 
  
  GENERATE|  Preliminary Number of Bonds generated:                             0
@@ -180,14 +180,14 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.9     0.01332027     -1059.3825086354 -1.06E+03
+     1 OT DIIS     0.15E+00    1.1     0.01332027     -1059.3825086354 -1.06E+03
      2 OT DIIS     0.15E+00    0.6     0.00868183     -1073.0837986870 -1.37E+01
-     3 OT DIIS     0.15E+00    0.5     0.00608177     -1082.3329453028 -9.25E+00
-     4 OT DIIS     0.15E+00    0.5     0.00420419     -1088.9991950661 -6.67E+00
+     3 OT DIIS     0.15E+00    0.6     0.00608177     -1082.3329453028 -9.25E+00
+     4 OT DIIS     0.15E+00    0.6     0.00420419     -1088.9991950661 -6.67E+00
      5 OT DIIS     0.15E+00    0.5     0.00319228     -1092.5975699473 -3.60E+00
      6 OT DIIS     0.15E+00    0.5     0.00242089     -1095.2728740329 -2.68E+00
      7 OT DIIS     0.15E+00    0.5     0.00180823     -1097.1827113587 -1.91E+00
-     8 OT DIIS     0.15E+00    0.5     0.00136563     -1098.4047634831 -1.22E+00
+     8 OT DIIS     0.15E+00    0.5     0.00136563     -1098.4047634830 -1.22E+00
      9 OT DIIS     0.15E+00    0.5     0.00107154     -1099.0957255862 -6.91E-01
     10 OT DIIS     0.15E+00    0.5     0.00085958     -1099.5568480761 -4.61E-01
     11 OT DIIS     0.15E+00    0.5     0.00070902     -1099.8674347814 -3.11E-01
@@ -196,7 +196,7 @@
     14 OT DIIS     0.15E+00    0.5     0.00044833     -1100.3361498733 -1.04E-01
     15 OT DIIS     0.15E+00    0.5     0.00039690     -1100.4341575919 -9.80E-02
     16 OT DIIS     0.15E+00    0.5     0.00035862     -1100.5038829651 -6.97E-02
-    17 OT DIIS     0.15E+00    0.5     0.00034534     -1100.5572960103 -5.34E-02
+    17 OT DIIS     0.15E+00    0.5     0.00034534     -1100.5572960102 -5.34E-02
     18 OT DIIS     0.15E+00    0.5     0.00034139     -1100.5793052412 -2.20E-02
     19 OT DIIS     0.15E+00    0.5     0.00033463     -1100.5947747647 -1.55E-02
     20 OT SD       0.15E+00    0.5     0.00033658     -1100.6056259094 -1.09E-02
@@ -212,45 +212,45 @@
     30 OT SD       0.15E+00    0.5     0.00028480     -1100.6824615830 -7.96E-03
     31 OT SD       0.15E+00    0.5     0.00028544     -1100.6904429284 -7.98E-03
     32 OT DIIS     0.15E+00    0.5     0.00028617     -1100.6984620163 -8.02E-03
-    33 OT SD       0.15E+00    0.5     0.00033211     -1100.7435544697 -4.51E-02
-    34 OT SD       0.15E+00    0.5     0.00031462     -1100.7540544103 -1.05E-02
-    35 OT SD       0.15E+00    0.5     0.00030588     -1100.7636302758 -9.58E-03
-    36 OT SD       0.15E+00    0.5     0.00030057     -1100.7727389546 -9.11E-03
-    37 OT SD       0.15E+00    0.5     0.00029679     -1100.7815597227 -8.82E-03
-    38 OT SD       0.15E+00    0.5     0.00029367     -1100.7901709574 -8.61E-03
-    39 OT DIIS     0.15E+00    0.5     0.00029082     -1100.7986066854 -8.44E-03
-    40 OT SD       0.15E+00    0.5     0.00016833     -1100.9875339790 -1.89E-01
-    41 OT DIIS     0.15E+00    0.5     0.00014750     -1100.9900984672 -2.56E-03
-    42 OT DIIS     0.15E+00    0.5     0.00023356     -1100.9860321902  4.07E-03
-    43 OT DIIS     0.15E+00    0.5     0.00017589     -1100.9988983844 -1.29E-02
-    44 OT DIIS     0.15E+00    0.5     0.00022227     -1101.0010807325 -2.18E-03
-    45 OT DIIS     0.15E+00    0.5     0.00015342     -1101.0160489387 -1.50E-02
-    46 OT DIIS     0.15E+00    0.5     0.00005874     -1101.0255694170 -9.52E-03
-    47 OT DIIS     0.15E+00    0.5     0.00007361     -1101.0255456259  2.38E-05
-    48 OT DIIS     0.15E+00    0.5     0.00005773     -1101.0267770429 -1.23E-03
+    33 OT SD       0.15E+00    0.5     0.00033211     -1100.7435544699 -4.51E-02
+    34 OT SD       0.15E+00    0.5     0.00031462     -1100.7540544105 -1.05E-02
+    35 OT SD       0.15E+00    0.5     0.00030588     -1100.7636302760 -9.58E-03
+    36 OT SD       0.15E+00    0.5     0.00030057     -1100.7727389548 -9.11E-03
+    37 OT SD       0.15E+00    0.5     0.00029679     -1100.7815597229 -8.82E-03
+    38 OT SD       0.15E+00    0.5     0.00029367     -1100.7901709577 -8.61E-03
+    39 OT DIIS     0.15E+00    0.5     0.00029082     -1100.7986066857 -8.44E-03
+    40 OT SD       0.15E+00    0.5     0.00016833     -1100.9875339786 -1.89E-01
+    41 OT DIIS     0.15E+00    0.5     0.00014750     -1100.9900984668 -2.56E-03
+    42 OT DIIS     0.15E+00    0.5     0.00023356     -1100.9860321891  4.07E-03
+    43 OT DIIS     0.15E+00    0.5     0.00017589     -1100.9988983835 -1.29E-02
+    44 OT DIIS     0.15E+00    0.5     0.00022227     -1101.0010807324 -2.18E-03
+    45 OT DIIS     0.15E+00    0.5     0.00015342     -1101.0160489385 -1.50E-02
+    46 OT DIIS     0.15E+00    0.5     0.00005874     -1101.0255694169 -9.52E-03
+    47 OT DIIS     0.15E+00    0.5     0.00007361     -1101.0255456258  2.38E-05
+    48 OT DIIS     0.15E+00    0.5     0.00005773     -1101.0267770428 -1.23E-03
     49 OT DIIS     0.15E+00    0.5     0.00005383     -1101.0275708713 -7.94E-04
-    50 OT DIIS     0.15E+00    0.5     0.00004288     -1101.0287871471 -1.22E-03
+    50 OT DIIS     0.15E+00    0.5     0.00004288     -1101.0287871472 -1.22E-03
 
   Leaving inner SCF loop after reaching    50 steps.
 
 
-  Electronic density on regular grids:       -512.0000015472       -0.0000015472
+  Electronic density on regular grids:       -512.0000015471       -0.0000015471
   Core density on regular grids:              512.0000000045        0.0000000045
-  Total charge density on r-space grids:       -0.0000015427
-  Total charge density g-space grids:          -0.0000015427
+  Total charge density on r-space grids:       -0.0000015426
+  Total charge density g-space grids:          -0.0000015426
 
   Overlap energy of the core charge distribution:               0.00000562599749
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    825.29378313873258
-  Hartree energy:                                            1145.26167488722194
-  Exchange-correlation energy:                               -266.27925586049827
+  Core Hamiltonian energy:                                    825.29378313775760
+  Hartree energy:                                            1145.26167488801775
+  Exchange-correlation energy:                               -266.27925586045973
 
-  Total energy:                                             -1101.02878714709595
+  Total energy:                                             -1101.02878714723647
 
  *** WARNING in qs_scf.F:542 :: SCF run NOT converged ***
 
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.031005888961772
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.031005888981099
 
  
  MD_ENERGIES| Initialization proceeding
@@ -290,9 +290,9 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00024950     -1101.0278021258 -1.10E+03
-     2 OT DIIS     0.15E+00    0.5     0.00016075     -1101.0327084347 -4.91E-03
-     3 OT DIIS     0.15E+00    0.5     0.00009051     -1101.0362859403 -3.58E-03
+     1 OT DIIS     0.15E+00    0.7     0.00024950     -1101.0278021259 -1.10E+03
+     2 OT DIIS     0.15E+00    0.5     0.00016075     -1101.0327084348 -4.91E-03
+     3 OT DIIS     0.15E+00    0.5     0.00009051     -1101.0362859404 -3.58E-03
      4 OT DIIS     0.15E+00    0.5     0.00006200     -1101.0377275198 -1.44E-03
      5 OT DIIS     0.15E+00    0.5     0.00003797     -1101.0386877144 -9.60E-04
      6 OT DIIS     0.15E+00    0.5     0.00002205     -1101.0391017420 -4.14E-04
@@ -304,18 +304,18 @@
 
   Electronic density on regular grids:       -512.0000014905       -0.0000014905
   Core density on regular grids:              511.9999999975       -0.0000000025
-  Total charge density on r-space grids:       -0.0000014931
-  Total charge density g-space grids:          -0.0000014931
+  Total charge density on r-space grids:       -0.0000014930
+  Total charge density g-space grids:          -0.0000014930
 
   Overlap energy of the core charge distribution:               0.00000554074576
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    824.99709644248219
-  Hartree energy:                                            1145.47089262752843
-  Exchange-correlation energy:                               -266.20227645692341
+  Core Hamiltonian energy:                                    824.99709644251220
+  Hartree energy:                                            1145.47089262750615
+  Exchange-correlation energy:                               -266.20227645692904
 
-  Total energy:                                             -1101.03927678471655
+  Total energy:                                             -1101.03927678471427
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.039289567769174
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.039289567766218
 
 
  *******************************************************************************
@@ -325,8 +325,8 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076554067E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                       33.20                33.20
- ENERGY DRIFT PER ATOM [K]    =         -0.110563236874E+02   0.000000000000E+00
+ CPU TIME [s]                 =                       33.81                33.81
+ ENERGY DRIFT PER ATOM [K]    =         -0.110563236515E+02   0.000000000000E+00
  POTENTIAL ENERGY[hartree]    =         -0.110103928957E+04  -0.110103928957E+04
  KINETIC ENERGY [hartree]     =          0.273748897148E+00   0.273748897148E+00
  TEMPERATURE [K]              =                     301.721              301.721
@@ -358,10 +358,10 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00018188     -1101.0453203601 -1.10E+03
-     2 OT DIIS     0.15E+00    0.5     0.00012504     -1101.0480047348 -2.68E-03
+     1 OT DIIS     0.15E+00    0.6     0.00018188     -1101.0453203603 -1.10E+03
+     2 OT DIIS     0.15E+00    0.5     0.00012504     -1101.0480047349 -2.68E-03
      3 OT DIIS     0.15E+00    0.5     0.00007518     -1101.0503824746 -2.38E-03
-     4 OT DIIS     0.15E+00    0.5     0.00005150     -1101.0514775397 -1.10E-03
+     4 OT DIIS     0.15E+00    0.5     0.00005150     -1101.0514775398 -1.10E-03
      5 OT DIIS     0.15E+00    0.5     0.00002882     -1101.0522243275 -7.47E-04
      6 OT DIIS     0.15E+00    0.5     0.00001713     -1101.0524515200 -2.27E-04
      7 OT DIIS     0.15E+00    0.5     0.00000972     -1101.0525297399 -7.82E-05
@@ -376,13 +376,13 @@
 
   Overlap energy of the core charge distribution:               0.00000508717596
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    823.99099462380821
-  Hartree energy:                                            1146.19319039102857
-  Exchange-correlation energy:                               -265.93172490333694
+  Core Hamiltonian energy:                                    823.99099462383629
+  Hartree energy:                                            1146.19319039100537
+  Exchange-correlation energy:                               -265.93172490334598
 
-  Total energy:                                             -1101.05252973987399
+  Total energy:                                             -1101.05252973987808
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.052553911868927
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.052553911873702
 
 
  *******************************************************************************
@@ -392,10 +392,10 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076574941E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.77                18.99
- ENERGY DRIFT PER ATOM [K]    =         -0.113996293366E+02  -0.569981466831E+01
+ CPU TIME [s]                 =                        4.71                19.26
+ ENERGY DRIFT PER ATOM [K]    =         -0.113996293142E+02  -0.569981465709E+01
  POTENTIAL ENERGY[hartree]    =         -0.110105255391E+04  -0.110104592174E+04
- KINETIC ENERGY [hartree]     =          0.286804501613E+00   0.280276699381E+00
+ KINETIC ENERGY [hartree]     =          0.286804501612E+00   0.280276699380E+00
  TEMPERATURE [K]              =                     316.110              308.915
  *******************************************************************************
 
@@ -425,9 +425,9 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00016600     -1101.0673391765 -1.10E+03
-     2 OT DIIS     0.15E+00    0.5     0.00011756     -1101.0696099926 -2.27E-03
-     3 OT DIIS     0.15E+00    0.5     0.00007011     -1101.0718400827 -2.23E-03
+     1 OT DIIS     0.15E+00    0.6     0.00016600     -1101.0673391766 -1.10E+03
+     2 OT DIIS     0.15E+00    0.5     0.00011756     -1101.0696099927 -2.27E-03
+     3 OT DIIS     0.15E+00    0.5     0.00007011     -1101.0718400828 -2.23E-03
      4 OT DIIS     0.15E+00    0.5     0.00004687     -1101.0728158232 -9.76E-04
      5 OT DIIS     0.15E+00    0.5     0.00002506     -1101.0734352383 -6.19E-04
      6 OT DIIS     0.15E+00    0.5     0.00001527     -1101.0735929560 -1.58E-04
@@ -443,13 +443,13 @@
 
   Overlap energy of the core charge distribution:               0.00000421676033
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    822.43891672539814
-  Hartree energy:                                            1147.30180967809565
-  Exchange-correlation energy:                               -265.50939016469999
+  Core Hamiltonian energy:                                    822.43891672545135
+  Hartree energy:                                            1147.30180967805518
+  Exchange-correlation energy:                               -265.50939016471068
 
-  Total energy:                                             -1101.07365448299561
+  Total energy:                                             -1101.07365448299333
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.073673410231549
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.073673410227457
 
 
  *******************************************************************************
@@ -459,10 +459,10 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076623800E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.80                14.26
- ENERGY DRIFT PER ATOM [K]    =         -0.122031984118E+02  -0.786760924948E+01
+ CPU TIME [s]                 =                        4.78                14.43
+ ENERGY DRIFT PER ATOM [K]    =         -0.122031983744E+02  -0.786760922954E+01
  POTENTIAL ENERGY[hartree]    =         -0.110107367341E+04  -0.110105517230E+04
- KINETIC ENERGY [hartree]     =          0.307435407040E+00   0.289329601934E+00
+ KINETIC ENERGY [hartree]     =          0.307435407039E+00   0.289329601933E+00
  TEMPERATURE [K]              =                     338.849              318.893
  *******************************************************************************
 
@@ -492,8 +492,8 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00016901     -1101.0882805767 -1.10E+03
-     2 OT DIIS     0.15E+00    0.5     0.00012004     -1101.0906385619 -2.36E-03
+     1 OT DIIS     0.15E+00    0.7     0.00016901     -1101.0882805768 -1.10E+03
+     2 OT DIIS     0.15E+00    0.5     0.00012004     -1101.0906385620 -2.36E-03
      3 OT DIIS     0.15E+00    0.5     0.00006991     -1101.0929758701 -2.34E-03
      4 OT DIIS     0.15E+00    0.5     0.00004370     -1101.0939496869 -9.74E-04
      5 OT DIIS     0.15E+00    0.5     0.00002172     -1101.0944515116 -5.02E-04
@@ -510,13 +510,13 @@
 
   Overlap energy of the core charge distribution:               0.00000308048317
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    820.48664247914621
-  Hartree energy:                                            1148.70443626898214
-  Exchange-correlation energy:                               -264.98068737438382
+  Core Hamiltonian energy:                                    820.48664247915156
+  Hartree energy:                                            1148.70443626897782
+  Exchange-correlation energy:                               -264.98068737438837
 
-  Total energy:                                             -1101.09460048432175
+  Total energy:                                             -1101.09460048432538
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.094614862850904
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.094614862854996
 
 
  *******************************************************************************
@@ -526,8 +526,8 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076681835E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.86                11.91
- ENERGY DRIFT PER ATOM [K]    =         -0.131576702873E+02  -0.919012450893E+01
+ CPU TIME [s]                 =                        4.84                12.03
+ ENERGY DRIFT PER ATOM [K]    =         -0.131576702630E+02  -0.919012448790E+01
  POTENTIAL ENERGY[hartree]    =         -0.110109461486E+04  -0.110106503294E+04
  KINETIC ENERGY [hartree]     =          0.327796513512E+00   0.298946329828E+00
  TEMPERATURE [K]              =                     361.291              329.493
@@ -576,13 +576,13 @@
 
   Overlap energy of the core charge distribution:               0.00000200945098
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    818.39013702350348
-  Hartree energy:                                            1150.21806280682222
-  Exchange-correlation energy:                               -264.40912049291569
+  Core Hamiltonian energy:                                    818.39013702353827
+  Hartree energy:                                            1150.21806280679539
+  Exchange-correlation energy:                               -264.40912049292297
 
-  Total energy:                                             -1101.10591359168870
+  Total energy:                                             -1101.10591359168802
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.105932126503831
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.105932126502466
 
 
  *******************************************************************************
@@ -592,8 +592,8 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076715531E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.36                10.40
- ENERGY DRIFT PER ATOM [K]    =         -0.137118610392E+02  -0.100944718150E+02
+ CPU TIME [s]                 =                        4.31                10.49
+ ENERGY DRIFT PER ATOM [K]    =         -0.137118610052E+02  -0.100944717913E+02
  POTENTIAL ENERGY[hartree]    =         -0.110110593213E+04  -0.110107321278E+04
  KINETIC ENERGY [hartree]     =          0.338776813368E+00   0.306912426536E+00
  TEMPERATURE [K]              =                     373.393              338.273
@@ -625,7 +625,7 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00004706     -1101.1011338470 -1.10E+03
+     1 OT DIIS     0.15E+00    0.6     0.00004706     -1101.1011338470 -1.10E+03
      2 OT DIIS     0.15E+00    0.5     0.00003814     -1101.1013292817 -1.95E-04
      3 OT DIIS     0.15E+00    0.5     0.00002079     -1101.1016568551 -3.28E-04
      4 OT DIIS     0.15E+00    0.5     0.00001223     -1101.1017643299 -1.07E-04
@@ -641,13 +641,13 @@
 
   Overlap energy of the core charge distribution:               0.00000123724772
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    816.35636903915383
-  Hartree energy:                                            1151.70037347705147
-  Exchange-correlation energy:                               -263.85355114364631
+  Core Hamiltonian energy:                                    816.35636903919976
+  Hartree energy:                                            1151.70037347701532
+  Exchange-correlation energy:                               -263.85355114365814
 
-  Total energy:                                             -1101.10180232874245
+  Total energy:                                             -1101.10180232874472
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.101815171088219
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.101815171090038
 
 
  *******************************************************************************
@@ -657,10 +657,10 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076702437E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.86                 9.31
- ENERGY DRIFT PER ATOM [K]    =         -0.134964997199E+02  -0.106614764658E+02
+ CPU TIME [s]                 =                        3.81                 9.38
+ ENERGY DRIFT PER ATOM [K]    =         -0.134964996907E+02  -0.106614764412E+02
  POTENTIAL ENERGY[hartree]    =         -0.110110181517E+04  -0.110107797984E+04
- KINETIC ENERGY [hartree]     =          0.334790803782E+00   0.311558822744E+00
+ KINETIC ENERGY [hartree]     =          0.334790803783E+00   0.311558822744E+00
  TEMPERATURE [K]              =                     369.000              343.394
  *******************************************************************************
 
@@ -705,13 +705,13 @@
 
   Overlap energy of the core charge distribution:               0.00000077877945
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    814.58618706624702
-  Hartree energy:                                            1153.00177254497635
-  Exchange-correlation energy:                               -263.36637254516398
+  Core Hamiltonian energy:                                    814.58618706629591
+  Hartree energy:                                            1153.00177254493769
+  Exchange-correlation energy:                               -263.36637254517558
 
-  Total energy:                                             -1101.08340709371078
+  Total energy:                                             -1101.08340709371214
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.083423173480696
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.083423173482061
 
 
  *******************************************************************************
@@ -721,10 +721,10 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076647587E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.36                 8.46
- ENERGY DRIFT PER ATOM [K]    =         -0.125944109855E+02  -0.109376099686E+02
+ CPU TIME [s]                 =                        3.31                 8.51
+ ENERGY DRIFT PER ATOM [K]    =         -0.125944109556E+02  -0.109376099433E+02
  POTENTIAL ENERGY[hartree]    =         -0.110108342317E+04  -0.110107875746E+04
- KINETIC ENERGY [hartree]     =          0.316947301876E+00   0.312328605477E+00
+ KINETIC ENERGY [hartree]     =          0.316947301877E+00   0.312328605477E+00
  TEMPERATURE [K]              =                     349.333              344.242
  *******************************************************************************
 
@@ -754,10 +754,10 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00003934     -1101.0575992328 -1.10E+03
+     1 OT DIIS     0.15E+00    0.6     0.00003934     -1101.0575992328 -1.10E+03
      2 OT DIIS     0.15E+00    0.5     0.00003220     -1101.0577371550 -1.38E-04
      3 OT DIIS     0.15E+00    0.5     0.00001302     -1101.0580145204 -2.77E-04
-     4 OT DIIS     0.15E+00    0.5     0.00000937     -1101.0580508186 -3.63E-05
+     4 OT DIIS     0.15E+00    0.5     0.00000937     -1101.0580508187 -3.63E-05
 
   *** SCF run converged in     4 steps ***
 
@@ -769,13 +769,13 @@
 
   Overlap energy of the core charge distribution:               0.00000054143075
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    813.21035129810753
-  Hartree energy:                                            1154.02258435861154
-  Exchange-correlation energy:                               -262.98599207825032
+  Core Hamiltonian energy:                                    813.21035129811889
+  Hartree energy:                                            1154.02258435860108
+  Exchange-correlation energy:                               -262.98599207825191
 
-  Total energy:                                             -1101.05805081864992
+  Total energy:                                             -1101.05805081865060
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.058072635288227
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.058072635290046
 
 
  *******************************************************************************
@@ -785,8 +785,8 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076580471E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.35                 7.82
- ENERGY DRIFT PER ATOM [K]    =         -0.114905720116E+02  -0.110067302240E+02
+ CPU TIME [s]                 =                        3.34                 7.86
+ ENERGY DRIFT PER ATOM [K]    =         -0.114905719824E+02  -0.110067301982E+02
  POTENTIAL ENERGY[hartree]    =         -0.110105807264E+04  -0.110107617186E+04
  KINETIC ENERGY [hartree]     =          0.292267929290E+00   0.309821020954E+00
  TEMPERATURE [K]              =                     322.132              341.479
@@ -818,7 +818,7 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00004063     -1101.0348903338 -1.10E+03
+     1 OT DIIS     0.15E+00    0.6     0.00004063     -1101.0348903338 -1.10E+03
      2 OT DIIS     0.15E+00    0.5     0.00003307     -1101.0350368210 -1.46E-04
      3 OT DIIS     0.15E+00    0.5     0.00001525     -1101.0353096156 -2.73E-04
      4 OT DIIS     0.15E+00    0.5     0.00001093     -1101.0353590077 -4.94E-05
@@ -834,13 +834,13 @@
 
   Overlap energy of the core charge distribution:               0.00000043858939
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    812.31303150723477
-  Hartree energy:                                            1154.69416732900663
-  Exchange-correlation energy:                               -262.73759239994314
+  Core Hamiltonian energy:                                    812.31303150720260
+  Hartree energy:                                            1154.69416732902732
+  Exchange-correlation energy:                               -262.73759239993478
 
-  Total energy:                                             -1101.03538806366191
+  Total energy:                                             -1101.03538806366510
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.035410328174976
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.035410328176795
 
 
  *******************************************************************************
@@ -850,8 +850,8 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076529419E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.82                 7.38
- ENERGY DRIFT PER ATOM [K]    =         -0.106509446023E+02  -0.109671984883E+02
+ CPU TIME [s]                 =                        3.78                 7.41
+ ENERGY DRIFT PER ATOM [K]    =         -0.106509445732E+02  -0.109671984621E+02
  POTENTIAL ENERGY[hartree]    =         -0.110103541033E+04  -0.110107164280E+04
  KINETIC ENERGY [hartree]     =          0.270116139610E+00   0.305409367471E+00
  TEMPERATURE [K]              =                     297.717              336.616
@@ -883,7 +883,7 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.15E+00    0.7     0.00004272     -1101.0227184492 -1.10E+03
+     1 OT DIIS     0.15E+00    0.6     0.00004272     -1101.0227184493 -1.10E+03
      2 OT DIIS     0.15E+00    0.5     0.00003547     -1101.0228815316 -1.63E-04
      3 OT DIIS     0.15E+00    0.5     0.00001954     -1101.0231905365 -3.09E-04
      4 OT DIIS     0.15E+00    0.5     0.00001351     -1101.0232865632 -9.60E-05
@@ -899,11 +899,11 @@
 
   Overlap energy of the core charge distribution:               0.00000042270338
   Self energy of the core charge distribution:              -2805.30499493854950
-  Core Hamiltonian energy:                                    811.91272299859463
-  Hartree energy:                                            1154.99784984070857
-  Exchange-correlation energy:                               -262.62892068398850
+  Core Hamiltonian energy:                                    811.91272299863840
+  Hartree energy:                                            1154.99784984067196
+  Exchange-correlation energy:                               -262.62892068399606
 
-  Total energy:                                             -1101.02334236053116
+  Total energy:                                             -1101.02334236053161
 
  ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):            -1101.023374985762530
 
@@ -915,8 +915,8 @@
  CONSERVED QUANTITY [hartree] =                              -0.110076505584E+04
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.27                 7.07
- ENERGY DRIFT PER ATOM [K]    =         -0.102589391592E+02  -0.108963725553E+02
+ CPU TIME [s]                 =                        3.79                 7.05
+ ENERGY DRIFT PER ATOM [K]    =         -0.102589391271E+02  -0.108963725286E+02
  POTENTIAL ENERGY[hartree]    =         -0.110102337499E+04  -0.110106681602E+04
  KINETIC ENERGY [hartree]     =          0.258319147697E+00   0.300700345494E+00
  TEMPERATURE [K]              =                     284.714              331.426
@@ -981,7 +981,7 @@
  marketing flops                     2.107592E+12
  -------------------------------------------------------------------------------
  # multiplications                           2286
- max memory usage/rank             662.589440E+06
+ max memory usage/rank             666.886144E+06
  # max total images/rank                        3
  # max 3D layers                                1
  # MPI messages exchanged                   96012
@@ -1019,7 +1019,7 @@
  MP_Memory          195674
  -------------------------------------------------------------------------------
  
- MEMORY| Estimated peak process memory [MiB]                                 639
+ MEMORY| Estimated peak process memory [MiB]                                 637
 
  -------------------------------------------------------------------------------
  -                                                                             -
@@ -1121,73 +1121,76 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.219    0.220   71.379   71.383
- qs_mol_dyn_low                       1  2.0    0.003    0.003   70.795   70.805
- qs_forces                           11  3.9    0.001    0.002   70.108   70.108
- qs_energies                         11  4.9    0.002    0.002   65.884   65.892
- scf_env_do_scf                      11  5.9    0.013    0.013   58.851   58.853
- scf_env_do_scf_inner_loop          108  6.5    0.004    0.008   52.943   52.943
- velocity_verlet                     10  3.0    0.001    0.001   42.614   42.702
- rebuild_ks_matrix                  119  8.3    0.001    0.001   24.124   24.444
- qs_ks_build_kohn_sham_matrix       119  9.3    0.012    0.013   24.123   24.443
- qs_ks_update_qs_env                119  7.6    0.001    0.001   21.510   21.802
- qs_rho_update_rho                  119  7.7    0.001    0.001   21.455   21.488
- calculate_rho_elec                 119  8.7   16.314   16.470   21.454   21.487
- sum_up_and_integrate               119 10.3    0.225    0.228   18.378   18.403
- integrate_v_rspace                 119 11.3   13.557   13.697   18.153   18.175
- dbcsr_multiply_generic            2286 12.5    0.121    0.122   17.467   17.808
- qs_scf_new_mos                     108  7.5    0.001    0.001   14.186   14.312
- qs_scf_loop_do_ot                  108  8.5    0.001    0.001   14.185   14.311
- ot_scf_mini                        108  9.5    0.002    0.002   12.381   12.521
- multiply_cannon                   2286 13.5    0.319    0.328    8.685    9.068
- ot_mini                            108 10.5    0.001    0.001    6.945    7.084
- multiply_cannon_multrec          13716 14.5    5.713    6.230    5.723    6.240
- make_m2s                          4572 13.5    0.084    0.085    5.952    6.222
- init_scf_loop                       11  6.9    0.000    0.000    5.861    5.861
- pw_transfer                       1439 11.6    0.083    0.094    4.962    5.048
- fft_wrap_pw1pw2                   1201 12.6    0.007    0.008    4.803    4.886
- make_images                       4572 14.5    0.589    0.637    4.493    4.576
- fft_wrap_pw1pw2_140                487 13.2    0.642    0.674    4.206    4.334
- qs_ot_get_derivative               108 11.5    0.001    0.001    4.078    4.218
- init_scf_run                        11  5.9    0.000    0.001    4.135    4.135
- scf_env_initial_rho_setup           11  6.9    0.001    0.001    4.135    4.135
- density_rs2pw                      119  9.7    0.004    0.005    3.874    4.114
- fft3d_ps                          1201 14.6    2.299    2.487    3.542    3.639
- wfi_extrapolate                     11  7.9    0.001    0.001    3.388    3.388
- prepare_preconditioner              11  7.9    0.000    0.000    3.238    3.255
- make_preconditioner                 11  8.9    0.000    0.000    3.238    3.254
- rs_pw_transfer                     974 11.9    0.006    0.006    2.863    3.074
- make_full_inverse_cholesky          11  9.9    0.000    0.000    3.035    3.050
- mp_waitall_1                     86386 16.4    2.424    2.967    2.424    2.967
- qs_ks_update_qs_env_forces          11  4.9    0.000    0.000    2.845    2.874
- ot_diis_step                       108 11.5    0.004    0.004    2.849    2.849
- potential_pw2rs                    119 12.3    0.043    0.045    2.819    2.827
- apply_preconditioner_dbcsr         119 12.6    0.000    0.000    2.737    2.818
- apply_single                       119 13.6    0.000    0.000    2.737    2.818
- make_images_data                  4572 15.5    0.055    0.057    2.397    2.539
- qs_energies_init_hamiltonians       11  5.9    0.000    0.000    2.514    2.514
- hybrid_alltoall_any               4725 16.4    0.710    1.341    2.115    2.356
- calculate_dm_sparse                119  9.5    0.001    0.001    2.023    2.137
- qs_ot_get_p                        119 10.4    0.002    0.002    1.937    2.104
- dbcsr_finalize                    5792 13.6    0.055    0.056    1.931    2.077
- dbcsr_merge_all                   5178 14.8    1.260    1.383    1.786    1.931
- rs_distribute_matrix               249 10.9    0.362    0.387    1.557    1.819
- qs_env_update_s_mstruct             11  6.9    0.000    0.000    1.740    1.767
- buffer_matrices_ensure_size       4572 14.5    1.023    1.502    1.044    1.541
- qs_create_task_list                 11  7.9    0.001    0.001    1.471    1.475
- generate_qs_task_list               11  8.9    0.752    0.808    1.470    1.474
- dbcsr_make_dense_low             11804 15.6    0.076    0.077    1.284    1.465
- qs_ot_get_derivative_diag           49 12.0    0.001    0.001    1.393    1.464
- dbcsr_make_images_dense           3978 14.8    0.055    0.055    1.264    1.449
+ CP2K                                 1  1.0    0.121    0.122   71.181   71.181
+ qs_mol_dyn_low                       1  2.0    0.003    0.004   70.647   70.669
+ qs_forces                           11  3.9    0.001    0.002   70.422   70.422
+ qs_energies                         11  4.9    0.001    0.001   66.203   66.211
+ scf_env_do_scf                      11  5.9    0.010    0.011   59.018   59.022
+ scf_env_do_scf_inner_loop          108  6.5    0.005    0.009   53.012   53.012
+ velocity_verlet                     10  3.0    0.001    0.001   41.903   41.913
+ rebuild_ks_matrix                  119  8.3    0.001    0.001   24.067   24.395
+ qs_ks_build_kohn_sham_matrix       119  9.3    0.012    0.014   24.066   24.395
+ qs_ks_update_qs_env                119  7.6    0.001    0.001   21.472   21.773
+ qs_rho_update_rho                  119  7.7    0.001    0.001   21.388   21.422
+ calculate_rho_elec                 119  8.7   16.233   16.443   21.387   21.421
+ sum_up_and_integrate               119 10.3    0.226    0.230   18.293   18.305
+ integrate_v_rspace                 119 11.3   13.428   13.668   18.066   18.090
+ dbcsr_multiply_generic            2286 12.5    0.123    0.126   17.647   18.036
+ qs_scf_new_mos                     108  7.5    0.001    0.001   14.388   14.529
+ qs_scf_loop_do_ot                  108  8.5    0.001    0.001   14.387   14.528
+ ot_scf_mini                        108  9.5    0.002    0.002   12.594   12.742
+ multiply_cannon                   2286 13.5    0.326    0.346    8.815    9.211
+ ot_mini                            108 10.5    0.001    0.001    7.092    7.245
+ multiply_cannon_multrec          13716 14.5    5.710    6.284    5.720    6.294
+ make_m2s                          4572 13.5    0.085    0.088    5.874    6.277
+ init_scf_loop                       11  6.9    0.000    0.000    5.960    5.961
+ pw_transfer                       1439 11.6    0.084    0.094    4.928    5.021
+ fft_wrap_pw1pw2                   1201 12.6    0.007    0.008    4.772    4.863
+ make_images                       4572 14.5    0.587    0.638    4.433    4.606
+ fft_wrap_pw1pw2_140                487 13.2    0.634    0.676    4.180    4.316
+ qs_ot_get_derivative               108 11.5    0.001    0.001    4.152    4.303
+ init_scf_run                        11  5.9    0.000    0.001    4.211    4.211
+ scf_env_initial_rho_setup           11  6.9    0.001    0.001    4.211    4.211
+ density_rs2pw                      119  9.7    0.004    0.005    3.889    4.121
+ fft3d_ps                          1201 14.6    2.303    2.475    3.515    3.598
+ wfi_extrapolate                     11  7.9    0.001    0.001    3.371    3.371
+ prepare_preconditioner              11  7.9    0.000    0.000    3.313    3.330
+ make_preconditioner                 11  8.9    0.000    0.000    3.313    3.330
+ make_full_inverse_cholesky          11  9.9    0.000    0.000    3.106    3.121
+ rs_pw_transfer                     974 11.9    0.006    0.007    2.882    3.098
+ mp_waitall_1                     86386 16.4    2.351    2.958    2.351    2.958
+ ot_diis_step                       108 11.5    0.004    0.004    2.918    2.918
+ apply_preconditioner_dbcsr         119 12.6    0.000    0.000    2.798    2.906
+ apply_single                       119 13.6    0.000    0.000    2.798    2.905
+ qs_ks_update_qs_env_forces          11  4.9    0.000    0.000    2.827    2.856
+ potential_pw2rs                    119 12.3    0.044    0.046    2.795    2.806
+ qs_energies_init_hamiltonians       11  5.9    0.000    0.000    2.592    2.592
+ make_images_data                  4572 15.5    0.056    0.057    2.271    2.391
+ qs_ot_get_p                        119 10.4    0.002    0.002    2.060    2.254
+ hybrid_alltoall_any               4725 16.4    0.697    1.281    2.050    2.162
+ calculate_dm_sparse                119  9.5    0.001    0.001    2.027    2.144
+ dbcsr_finalize                    5792 13.6    0.054    0.058    1.891    2.074
+ rs_distribute_matrix               249 10.9    0.356    0.375    1.667    2.034
+ dbcsr_merge_all                   5178 14.8    1.217    1.387    1.748    1.927
+ qs_env_update_s_mstruct             11  6.9    0.000    0.000    1.782    1.800
+ buffer_matrices_ensure_size       4572 14.5    1.019    1.561    1.038    1.583
+ qs_create_task_list                 11  7.9    0.000    0.000    1.515    1.520
+ generate_qs_task_list               11  8.9    0.746    0.804    1.515    1.520
+ qs_ot_get_derivative_diag           49 12.0    0.001    0.001    1.433    1.516
+ dbcsr_make_dense_low             11804 15.6    0.076    0.078    1.264    1.487
+ dbcsr_make_images_dense           3978 14.8    0.055    0.058    1.248    1.477
+ cp_dbcsr_sm_fm_multiply             37  9.5    0.001    0.001    1.439    1.444
+ qs_ot_get_derivative_taylor         59 13.0    0.001    0.002    1.355    1.427
+ mp_alltoall_d11v                  2141 13.8    1.134    1.424    1.134    1.424
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 2
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2023-07-27 10:56:36.366
- ***** ** ***  *** **   PROGRAM RAN ON                                   r1i4n33
+  **** **** ******  **  PROGRAM ENDED AT                 2023-07-27 11:49:45.407
+ ***** ** ***  *** **   PROGRAM RAN ON                                   r1i7n18
  **    ****   ******    PROGRAM RAN BY                             mrnuff-cirrus
- ***** **    ** ** **   PROGRAM PROCESS ID                                437606
+ ***** **    ** ** **   PROGRAM PROCESS ID                                511202
   **** **  *******  **  PROGRAM STOPPED IN /mnt/lustre/indy2lfs/work/tc047/tc047
                                            /mrnuff-cirrus/cp2k/nuff-benchmarks/H
                                            2O-64-1node
