@@ -102,11 +102,9 @@ MODULE qs_collocate_density
    USE realspace_grid_types,            ONLY: map_gaussian_here,&
                                               realspace_grid_desc_p_type,&
                                               realspace_grid_type,&
-                                              rs2pw,&
                                               rs_grid_zero,&
-                                              rs_pw_transfer
-   USE rs_pw_interface,                 ONLY: density_rs2pw,&
-                                              density_rs2pw_basic
+                                              transfer_rs2pw
+   USE rs_pw_interface,                 ONLY: density_rs2pw
    USE task_list_methods,               ONLY: rs_copy_to_buffer,&
                                               rs_distribute_matrix,&
                                               rs_scatter_matrices
@@ -315,7 +313,7 @@ CONTAINS
          DEALLOCATE (cores)
       END IF
 
-      CALL rs_pw_transfer(rs_rho, rho_nlcc, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rho_nlcc)
 
       CALL timestop(handle)
 
@@ -488,7 +486,7 @@ CONTAINS
          DEALLOCATE (cores)
       END IF
 
-      CALL rs_pw_transfer(rs_rho, vppl, rs2pw)
+      CALL transfer_rs2pw(rs_rho, vppl)
 
       CALL timestop(handle)
 
@@ -761,8 +759,8 @@ CONTAINS
 
       DO igrid_level = 1, gridlevel_info%ngrid_levels
          CALL pw_zero(mgrid_rspace(igrid_level))
-         CALL rs_pw_transfer(rs=rs_rho(igrid_level), &
-                             pw=mgrid_rspace(igrid_level), dir=rs2pw)
+         CALL transfer_rs2pw(rs=rs_rho(igrid_level), &
+                             pw=mgrid_rspace(igrid_level))
       END DO
 
       DO igrid_level = 1, gridlevel_info%ngrid_levels
@@ -898,7 +896,7 @@ CONTAINS
       CALL pw_pool_create_pw(auxbas_pw_pool, rhoc_r, &
                              use_data=REALDATA3D, in_space=REALSPACE)
 
-      CALL rs_pw_transfer(rs_rho, rhoc_r, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rhoc_r)
 
       total_rho = pw_integrate_function(rhoc_r, isign=-1)
 
@@ -1033,7 +1031,7 @@ CONTAINS
       CALL pw_pool_create_pw(auxbas_pw_pool, rhoc_r, &
                              use_data=REALDATA3D, in_space=REALSPACE)
 
-      CALL rs_pw_transfer(rs_rho, rhoc_r, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rhoc_r)
 
       CALL pw_transfer(rhoc_r, drho_core)
 
@@ -1122,7 +1120,7 @@ CONTAINS
       CALL pw_pool_create_pw(auxbas_pw_pool, rhoc_r, &
                              use_data=REALDATA3D, in_space=REALSPACE)
 
-      CALL rs_pw_transfer(rs_rho, rhoc_r, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rhoc_r)
 
       CALL pw_transfer(rhoc_r, rho_gb)
 
@@ -1227,7 +1225,7 @@ CONTAINS
       CALL pw_pool_create_pw(auxbas_pw_pool, rhoc_r, &
                              use_data=REALDATA3D, in_space=REALSPACE)
 
-      CALL rs_pw_transfer(rs_rho, rhoc_r, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rhoc_r)
 
       IF (PRESENT(total_rho_metal)) &
          !minus sign: account for the fact that rho_metal has opposite sign
@@ -1321,7 +1319,7 @@ CONTAINS
       CALL pw_pool_create_pw(auxbas_pw_pool, rhoc_r, &
                              use_data=REALDATA3D, in_space=REALSPACE)
 
-      CALL rs_pw_transfer(rs_rho, rhoc_r, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rhoc_r)
 
       CALL pw_transfer(rhoc_r, rho_gb)
 
@@ -1426,7 +1424,7 @@ CONTAINS
       CALL pw_pool_create_pw(auxbas_pw_pool, rhoc_r, &
                              use_data=REALDATA3D, in_space=REALSPACE)
 
-      CALL rs_pw_transfer(rs_rho, rhoc_r, rs2pw)
+      CALL transfer_rs2pw(rs_rho, rhoc_r)
 
       CALL pw_transfer(rhoc_r, rho_resp)
       CALL pw_pool_give_back_pw(auxbas_pw_pool, rhoc_r)
@@ -1977,7 +1975,7 @@ CONTAINS
 
          END DO loop_tasks
 
-         CALL density_rs2pw_basic(pw_env, rs_rho, drho(idir), drho_gspace(idir))
+         CALL density_rs2pw(pw_env, rs_rho, drho(idir), drho_gspace(idir))
 
       END DO loop_xyz
 
@@ -2381,7 +2379,7 @@ CONTAINS
 
       END DO loop_tasks
 
-      CALL density_rs2pw_basic(pw_env, rs_rho, drho, drho_gspace)
+      CALL density_rs2pw(pw_env, rs_rho, drho, drho_gspace)
 
       !   *** Release work storage ***
       IF (distributed_rs_grids) THEN
@@ -2561,8 +2559,8 @@ CONTAINS
       END DO
 
       DO igrid_level = 1, gridlevel_info%ngrid_levels
-         CALL rs_pw_transfer(rs_rho(igrid_level), &
-                             mgrid_rspace(igrid_level), rs2pw)
+         CALL transfer_rs2pw(rs_rho(igrid_level), &
+                             mgrid_rspace(igrid_level))
       END DO
 
       CALL pw_zero(rho_gspace)
@@ -2763,8 +2761,8 @@ CONTAINS
       END DO
 
       DO igrid_level = 1, gridlevel_info%ngrid_levels
-         CALL rs_pw_transfer(rs_rho(igrid_level), &
-                             mgrid_rspace(igrid_level), rs2pw)
+         CALL transfer_rs2pw(rs_rho(igrid_level), &
+                             mgrid_rspace(igrid_level))
       END DO
 
       CALL pw_zero(rho_gspace)

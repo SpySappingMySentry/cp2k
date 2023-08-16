@@ -58,9 +58,14 @@ MODULE qs_rho0_ggrid
    USE qs_rho_atom_types,               ONLY: get_rho_atom,&
                                               rho_atom_coeff,&
                                               rho_atom_type
-   USE realspace_grid_types,            ONLY: &
-        pw2rs, realspace_grid_desc_p_type, realspace_grid_desc_type, realspace_grid_type, rs2pw, &
-        rs_grid_create, rs_grid_release, rs_grid_zero, rs_pw_transfer
+   USE realspace_grid_types,            ONLY: realspace_grid_desc_p_type,&
+                                              realspace_grid_desc_type,&
+                                              realspace_grid_type,&
+                                              rs_grid_create,&
+                                              rs_grid_release,&
+                                              rs_grid_zero,&
+                                              transfer_pw2rs,&
+                                              transfer_rs2pw
    USE util,                            ONLY: get_limit
    USE virial_types,                    ONLY: virial_type
 #include "./base/base_uses.f90"
@@ -225,7 +230,7 @@ CONTAINS
       DEALLOCATE (pab)
 
       IF (igrid /= auxbas_grid) THEN
-         CALL rs_pw_transfer(rs_grid, coeff_rspace, rs2pw)
+         CALL transfer_rs2pw(rs_grid, coeff_rspace)
          CALL pw_zero(rho0_s_gs)
          CALL pw_transfer(coeff_rspace, coeff_gspace)
          CALL pw_axpy(coeff_gspace, rho0_s_gs)
@@ -239,7 +244,7 @@ CONTAINS
          CALL pw_pool_create_pw(pw_pool, rho0_r_tmp, &
                                 use_data=REALDATA3D, in_space=REALSPACE)
 
-         CALL rs_pw_transfer(rs_grid, rho0_r_tmp, rs2pw)
+         CALL transfer_rs2pw(rs_grid, rho0_r_tmp)
 
          tot_rs_int = pw_integrate_function(rho0_r_tmp, isign=-1)
 
@@ -313,15 +318,17 @@ CONTAINS
 !> \param calculate_forces ...
 !> \param local_rho_set ...
 !> \param local_rho_set_2nd ...
+!> \param atener ...
 ! **************************************************************************************************
    SUBROUTINE integrate_vhg0_rspace(qs_env, v_rspace, para_env, calculate_forces, local_rho_set, &
-                                    local_rho_set_2nd)
+                                    local_rho_set_2nd, atener)
 
       TYPE(qs_environment_type), POINTER                 :: qs_env
       TYPE(pw_type), INTENT(IN)                          :: v_rspace
       TYPE(mp_para_env_type), POINTER                    :: para_env
       LOGICAL, INTENT(IN)                                :: calculate_forces
       TYPE(local_rho_type), OPTIONAL, POINTER            :: local_rho_set, local_rho_set_2nd
+      REAL(KIND=dp), DIMENSION(:), OPTIONAL              :: atener
 
       CHARACTER(LEN=*), PARAMETER :: routineN = 'integrate_vhg0_rspace'
 
@@ -465,7 +472,7 @@ CONTAINS
       ! Setup the rs grid at level igrid
       CALL rs_grid_create(rs_v, rs_desc)
       CALL rs_grid_zero(rs_v)
-      CALL rs_pw_transfer(rs_v, coeff_rspace, pw2rs)
+      CALL transfer_pw2rs(rs_v, coeff_rspace)
 
       CALL pw_pool_give_back_pw(pw_pool, coeff_rspace)
 
@@ -632,6 +639,12 @@ CONTAINS
                   DO ispin = 1, nspins
                      int_local_h(ispin)%r_coef = int_local_h(ispin)%r_coef + intloc
                      int_local_s(ispin)%r_coef = int_local_s(ispin)%r_coef + intloc
+                  END DO
+               END IF
+
+               IF (PRESENT(atener)) THEN
+                  DO iso = 1, nsoset(l0_ikind)
+                     atener(iatom) = atener(iatom) + 0.5_dp*Qlm(iso)*hab_sph(iso)
                   END DO
                END IF
 
